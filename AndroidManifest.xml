@@ -11,8 +11,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".JournalActivity"/>
+        <activity android:name=".TodaysJournalActivity"/>
         <activity android:name=".DailyBestActivity"/>
+        <activity android:name=".JournalActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 </manifest> 

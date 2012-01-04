@@ -17,11 +17,20 @@ public final class R {
         public static final int ic_tab_journal=0x7f020003;
         public static final int ic_tab_journal_grey=0x7f020004;
         public static final int ic_tab_journal_white=0x7f020005;
+        public static final int ic_tab_todays_journal=0x7f020006;
+        public static final int ic_tab_todays_journal_grey=0x7f020007;
+        public static final int ic_tab_todays_journal_white=0x7f020008;
+    }
+    public static final class id {
+        public static final int text1=0x7f050000;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int journal=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int notes_row=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int no_notes=0x7f040001;
     }
 }
