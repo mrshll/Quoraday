@@ -12,6 +12,6 @@ import java.util.*;
 public class Entry {
     public String question;
     public String text;
-    public Date date;
+    public String date;
     public int votes;
 }
