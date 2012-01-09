@@ -10,9 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9737ebcc-a4a1-43c4-8f51-4cde5fc16666" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/notes_edit.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/Entry.java" afterPath="$PROJECT_DIR$/src/com/example/Entry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/example/R.java" afterPath="$PROJECT_DIR$/gen/com/example/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/JournalActivity.java" afterPath="$PROJECT_DIR$/src/com/example/JournalActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/TodaysJournalActivity.java" afterPath="$PROJECT_DIR$/src/com/example/TodaysJournalActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/Util.java" afterPath="$PROJECT_DIR$/src/com/example/Util.java" />
     </list>
     <ignored path="Quorum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,29 +79,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/HomeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="50" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="52" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="141" column="22" selection-start="4954" selection-end="4954" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#5494#5509#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,7 +93,25 @@
       <file leaf-file-name="TodaysJournalActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/TodaysJournalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+            <state line="38" column="93" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notes_edit.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/notes_edit.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="33" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="37" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,12 +120,8 @@
       <file leaf-file-name="JournalActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/JournalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="9" selection-start="2977" selection-end="2977" vertical-scroll-proportion="0.59016395">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1155#1162#0" expanded="true" />
-                <element signature="e#2047#2055#0" expanded="true" />
-              </folding>
+            <state line="39" column="17" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.2849741">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,16 +193,17 @@
         <option value="$PROJECT_DIR$/src/com/example/Home.java" />
         <option value="$PROJECT_DIR$/src/com/example/DailyBestActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/notes_row.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/drawable/ic_tab_todays_journal.xml" />
         <option value="$PROJECT_DIR$/res/layout/ic_tab_journal.xml" />
         <option value="$PROJECT_DIR$/res/drawable/ic_tab_daily_best.xml" />
         <option value="$PROJECT_DIR$/res/drawable/ic_tab_journal.xml" />
         <option value="$PROJECT_DIR$/src/com/example/HomeActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/Entry.java" />
+        <option value="$PROJECT_DIR$/res/layout/notes_edit.xml" />
         <option value="$PROJECT_DIR$/src/com/example/TodaysJournalActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/Util.java" />
-        <option value="$PROJECT_DIR$/src/com/example/Entry.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/example/JournalActivity.java" />
       </list>
     </option>
@@ -616,18 +619,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7779553" sideWeight="0.49772727" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987441" sideWeight="0.6432161" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18181819" sideWeight="0.6597444" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3402556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18030304" sideWeight="0.22204472" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3402556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7779553" sideWeight="0.4969697" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.6741214" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.6597444" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3258786" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -667,7 +670,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 3 tabs, you can get todays question, view old responses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed journal display string. Adding list click callback." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -681,6 +684,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Added 3 tabs, you can get todays question, view old responses" />
+    <MESSAGE value="Fixed journal display string. Adding list click callback." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -705,11 +709,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/journal.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="14" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" />
@@ -725,14 +724,19 @@
         <state line="15" column="50" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="52" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/TodaysJournalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" />
+        <state line="38" column="93" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/notes_edit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="33" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/ic_tab_journal.xml">
@@ -755,21 +759,26 @@
         <state line="8" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/Entry.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+        <state line="141" column="22" selection-start="4954" selection-end="4954" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#5494#5509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="37" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/JournalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="9" selection-start="2977" selection-end="2977" vertical-scroll-proportion="0.59016395">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1155#1162#0" expanded="true" />
-            <element signature="e#2047#2055#0" expanded="true" />
-          </folding>
+        <state line="39" column="17" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.2849741">
+          <folding />
         </state>
       </provider>
     </entry>

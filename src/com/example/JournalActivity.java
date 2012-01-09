@@ -5,7 +5,11 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
@@ -28,11 +32,32 @@ import java.util.Locale;
  * To change this template use File | Settings | File Templates.
  */
 public class JournalActivity extends ListActivity{
+
+    private static final int DELETE_ID = Menu.FIRST + 1;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.journal);
         fillData();
+        registerForContextMenu(getListView());
+    }
+
+    public void onCreateContextMenu(Menu menu, View v,
+                                    ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        menu.add(0, DELETE_ID, 0, R.string.delete);
+    }
+
+    public boolean onContextItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case DELETE_ID:
+                AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+                Util.deleteEntry(info.id);
+                fillData();
+                return true;
+        }
+        return super.onContextItemSelected(item);
     }
 
     private void fillData() {
@@ -75,7 +100,7 @@ public class JournalActivity extends ListActivity{
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        Intent i = new Intent(this, NoteEdit.class);
+        //Intent i = new Intent(this, NoteEdit.class);
         /*
         i.putExtra(id);
         i.putExtra(NotesDbAdapter.KEY_TITLE, c.getString(
