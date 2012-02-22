@@ -1,0 +1,11 @@
+QUORADAY
+========
+
+An android app that poses one question a day, pulled from the internet. Users
+can respond to the question, either publically or privately. Users can view
+posts of the day and 'star' them. Top starred responses of the day can be
+viewed by the user.
+
+All user responses are stored in a mysql database and pulled upon request.
+
+A lot of work needs to be done to make all functionality.

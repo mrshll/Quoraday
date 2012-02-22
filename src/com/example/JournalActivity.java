@@ -1,8 +1,6 @@
 package com.example;
 
 import android.app.ListActivity;
-import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -12,17 +10,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.Locale;
 
 /**
  * Created by IntelliJ IDEA.
@@ -43,7 +37,7 @@ public class JournalActivity extends ListActivity{
         registerForContextMenu(getListView());
     }
 
-    public void onCreateContextMenu(Menu menu, View v,
+    public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         menu.add(0, DELETE_ID, 0, R.string.delete);
@@ -53,7 +47,8 @@ public class JournalActivity extends ListActivity{
         switch(item.getItemId()) {
             case DELETE_ID:
                 AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-                Util.deleteEntry(info.id);
+                System.out.println(info.id);
+                //Util.deleteEntry(info.id);
                 fillData();
                 return true;
         }
@@ -62,9 +57,21 @@ public class JournalActivity extends ListActivity{
 
     private void fillData() {
         // Get all of the entries from the database and create the item list
-        JSONArray jArray = Util.getUserResponses(1);
+        JSONArray jArray = Util.getUserEntries(1);
         ArrayList<Entry> entries = new ArrayList<Entry>(10);
 
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+        Date date = new Date();
+
+        //First add today's question
+        Entry today = new Entry();
+        today.date = dateFormat.format(date).toString();
+        today.question = Util.getTodaysPrompt();
+        
+        String userEntryToday = Util.getUserEntryToday();
+        today.text = (userEntryToday=="")?userEntryToday:"Add Response";
+
+        
         //Loop though my JSONArray
         for(Integer i=0; i< Math.min(jArray.length(), 10); i++){
             try{
@@ -77,6 +84,9 @@ public class JournalActivity extends ListActivity{
                 n.votes = jArray.getJSONObject(i).getInt("e_votes");
 
                 //Add the string to the list
+                if(i==0 && today.date != n.date){
+                    entries.add(today);
+                }
                 entries.add(n);
             }catch(JSONException e){
                 Log.e("log_tag", "Parsing the JSON failed: " + e.toString());

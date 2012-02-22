@@ -27,6 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URI;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -115,18 +116,14 @@ public class Util {
     }
 
 
-    public static JSONArray getUserResponses(int id){
-        ArrayList<NameValuePair> datum = new ArrayList<NameValuePair>();
-        datum.add(new BasicNameValuePair("user_id", Integer.toString(id)));
-
+    public static JSONArray getUserEntries(int id){
         InputStream is = null;
         String result = "";
         try{
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://quoraday.pewpewlasers.com/getUserResponses.php");
-            httppost.setEntity(new UrlEncodedFormEntity(datum));
+            HttpGet httpget = new HttpGet("http://quoraday.pewpewlasers.com/getUserEntries.php?user_id="+ URLEncoder.encode(Integer.toString(id)));
 
-            HttpResponse response = httpclient.execute(httppost);
+            HttpResponse response = httpclient.execute(httpget);
             HttpEntity entity = response.getEntity();
             is = entity.getContent();
         } catch(Exception e){
@@ -142,6 +139,7 @@ public class Util {
             is.close();
 
             result=sb.toString();
+            System.out.println("result:  " + result);
         } catch(Exception e){
             Log.e("log_tag", "Error converting result "+e.toString());
         }
@@ -166,7 +164,10 @@ public class Util {
         String result = "";
         try{
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://quoraday.pewpewlasers.com/createEntry.php");
+            HttpPost httppost = new HttpPost("http://quoraday.pewpewlasers.com/createEntry.php"+
+                "?user_id="+URLEncoder.encode(Integer.toString(user_id))+
+                "&question_id="+URLEncoder.encode(Integer.toString(question_id))+
+                "&text="+URLEncoder.encode(text));
             httppost.addHeader("Content-Type", "application/x-www-form-urlencoded");
             httppost.setEntity(new UrlEncodedFormEntity(data, HTTP.UTF_8));
             System.out.println(httppost.getEntity().toString());
